@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Selling Website</title>
+    <style>
+body {
+            background-image: url(images/2.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+    
+        .welcome {
+            font-weight: bold;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            border-bottom: 5px solid rgb(104, 107, 76);
+            border-radius: 15px;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            background-color: rgba(165, 42, 42, 0.315);
+            font-family:'Lucida Sans';
+        }
+        .car-type {
+            text-align: center;
+            margin-top: 50px;
+            background-color: rgba(139, 0, 0, 0.384);
+            padding: 15px;
+            width: 210px;
+            color: white;
+            border-radius: 10px;
+        }
+        .rent {
+            color: crimson;
+        }
+        .rent:hover {
+            text-decoration: underline;
+            color: black;
+            transition: color 0.3s;
+        }
+        .button_bro {
+            margin-top: 20px;
+        }
+        .button_bro button {
+            background-color: rgb(0, 119, 255);
+            color: white;
+            border: none;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.35s, border-radius 0.35s;
+        }
+        .button_bro button:hover {
+            opacity: 0.6;
+            border-radius: 7px;
+        }
+        .cool {
+            background-color: rgb(162, 0, 255);
+        }
+        .gud {
+            background-color: rgb(0, 252, 210);
+        }
+        footer {
+            background-color: rgba(108, 245, 199, 0.144);
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-top: 2px solid burlywood;
+            color: rgb(255, 255, 255);
+        }
+        .Plz {
+            background-color: rgba(255, 228, 196, 0.603);
+            height: 30px;
+            width: 500px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-family: Verdana;
+        }
+
+        .information{
+
+            background-color: rgba(245, 222, 179, 0.356);
+            color: rgb(231, 196, 40);
+            font-family: Arial;
+            border-radius: 7px;
+            text-align: center;
+            padding: 10px 30px;
+        }
+
+        .first{
+
+            color: rgb(211, 12, 5);
+            font-weight: bold;
+        }
+
+        .reliable{
+
+            color: rgb(255, 255, 255);
+        }
+
+        .dollar{
+
+            color: rgb(0, 248, 21);
+        }
+
+        .countries{
+
+            border: none;
+            position: absolute;
+            left: 28px;
+            top: 25px;
+            padding: 10px 10px;
+            transition: border-radius 0.55s; 
+            background-color: rgb(45, 248, 4);
+            color: rgb(0, 0, 0);
+            font-family: 'Trebuchet MS';
+            
+            
+        }
+
+        .countries:hover{
+
+         border-radius: 5px;
+         opacity: 0.6;
+
+        }
+
+
+        .important{
+            font-family: cursive;
+            color: rgb(187, 255, 0);
+        }
+
+
+
+    </style>
+    <script>
+        function gotogoofy() {
+            window.location.href = "GOOFY-car.html";
+        }
+        function gotogud() {
+            window.location.href = "GUD-car.html";
+        }
+        function gotocool() {
+            window.location.href = "COOL-car.html";
+        }
+
+        function gotocountry() {
+
+            window.location.href = "country-list.html";
+        }
+    </script>
+</head>
+<body>
+    <p class="welcome">A CHEAP CAR SELLING WEBSITE</p>
+    <p class="car-type">CAR TYPES</p>
+    <p class="Plz">Please select a car from here, so I can pay my <span class="rent">RENT</span> XD</p>
+    <div class="button_bro">
+        <button class="goofy" onclick="gotogoofy()">CAR goofy</button>
+        <button class="gud" onclick="gotogud()">CAR gud</button>
+        <button class="cool" onclick="gotocool()">CAR cool</button>
+    </div>
+    <hr>
+    <hr>
+
+    <div class="information">
+
+ <p><span class="first"><ins>WANT TO BUY A CAR?</ins></span> you've landed on the <span class="right">right place</span></p>
+ <p>Here you can get a <span class="reliable"><ins>reliable</ins></span> car at an affordable price, the prices of the cars wont be above <span class="dollar"><big>800$</big></span></p>
+ <h3 class="important">before buying the cars, please check that if you are in the list of countries for purchasing</h3>
+
+</div>
+
+<div class="row-button">
+
+    <button class="countries" onclick="gotocountry()">List of countries</button>
+
+</div>
+
+<hr>
+<hr>
+<hr>
+    <footer>
+        &copy; 2024 Car Selling Website
+    </footer>
+</body>
+</html>
